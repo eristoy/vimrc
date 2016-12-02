@@ -26,9 +26,10 @@ filetype plugin indent on
 
 "Basic Settings
 syntax on
+let python_highlight_all=1
 set title
 set number
-set history=10001
+set history=9000
 set timeoutlen=300
 set noexrc
 set fenc=utf-8
@@ -46,6 +47,7 @@ set noerrorbells
 set wildmenu
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png
 set wildmode=list:longest
+set shortmess=a
 
 "Color Stuff
 colorscheme seti
@@ -105,3 +107,41 @@ nmap <C-N><C-N> :set invnumber<CR>
 nmap <C-L><C-L> :set list<CR>
 nmap <C-K><C-K> :set nolist<CR>
 
+"Other indention settings
+au BufNewFile,BufRead silent *.js, *.html, *.css
+    set tabstop=2
+    set softtabstop=2
+    set shiftwidth=2
+
+"Python Specific Settings
+au BufNewFile,BufRead silent *.py
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+    set textwidth=79
+    set expandtab
+    set autoindent
+    set fileformat=unix
+
+"====[ Show when lines extend past column 80 ]=================================>-<=====================
+
+highlight ColorColumn ctermfg=208 ctermbg=Black
+
+function! MarkMargin (on)
+    if exists('b:MarkMargin')
+        try
+            call matchdelete(b:MarkMargin)
+        catch /./
+        endtry
+        unlet b:MarkMargin
+    endif
+    if a:on
+        let b:MarkMargin = matchadd('ColorColumn', '\%81v\s*\S', 100)
+    endif
+endfunction
+
+augroup MarkMargin
+    autocmd!
+    autocmd  BufEnter  *       :call MarkMargin(1)
+    autocmd  BufEnter  *.vp*   :call MarkMargin(0)
+augroup END
