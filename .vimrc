@@ -12,11 +12,11 @@ Plugin 'gmarik/Vundle.vim'
 
 "All plugins here
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'tmhedberg/SimplyFold'
+Plugin 'tmhedberg/SimpylFold'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'aperzdc/vim-template'
+Plugin 'aperezdc/vim-template'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 
@@ -48,6 +48,10 @@ set wildmenu
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png
 set wildmode=list:longest
 set shortmess=a
+
+"Template overrides
+let g:username = "Eric Stoycon"
+let g:email = "estoycon@gmail.com"
 
 "Color Stuff
 colorscheme seti
