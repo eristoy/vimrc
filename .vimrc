@@ -18,6 +18,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'aperezdc/vim-template'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'xolox/vim-colorscheme-switcher'
+"Plugin 'xolox/vim-misc'
+"Plugin 'Taverius/vim-colorscheme-manager'
 
 
 "End of Vundle plugins
@@ -48,10 +51,6 @@ set wildmenu
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png
 set wildmode=list:longest
 set shortmess=a
-
-"Template overrides
-let g:username = "Eric Stoycon"
-let g:email = "estoycon@gmail.com"
 
 "Color Stuff
 colorscheme seti
