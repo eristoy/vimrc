@@ -16,8 +16,8 @@ Plugin 'tmhedberg/SimpylFold'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'aperezdc/vim-template'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'tpope/vim-markdown'
 "Plugin 'xolox/vim-colorscheme-switcher'
 "Plugin 'xolox/vim-misc'
 "Plugin 'Taverius/vim-colorscheme-manager'
@@ -105,7 +105,7 @@ endfunction " }
 set foldtext=SimpleFoldText()
 
 "Mappings
-set pastetoggle=<F2>
+set pastetoggle=<F3>
 nmap <C-N><C-N> :set invnumber<CR>
 nmap <C-L><C-L> :set list<CR>
 nmap <C-K><C-K> :set nolist<CR>
@@ -125,7 +125,8 @@ au BufNewFile,BufRead silent *.py
     set expandtab
     set autoindent
     set fileformat=unix
-
+"NH Specific Templates
+au BufNewFile NH_*.html 0r ~/.vim/skel/nh-skel.html | let IndetStyle = "html"
 "====[ Show when lines extend past column 80 ]=================================>-<=====================
 
 highlight ColorColumn ctermfg=208 ctermbg=Black
