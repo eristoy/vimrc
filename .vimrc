@@ -18,6 +18,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-surround'
 "Plugin 'xolox/vim-colorscheme-switcher'
 "Plugin 'xolox/vim-misc'
 "Plugin 'Taverius/vim-colorscheme-manager'

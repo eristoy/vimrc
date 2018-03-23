@@ -11,33 +11,49 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/<
+~MSle0~/print
 
 # Last Substitute Search Pattern:
-~MSle0&     
+~MSle0& 
 
 # Last Substitute String:
-$
+$_
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1502301570,,"q"
+|2,0,1521816912,,"q"
+:wq
+|2,0,1521815727,,"wq"
 :w
-|2,0,1502301337,,"w"
+|2,0,1521815329,,"w"
+:276
+|2,0,1521815307,,"276"
+:BundleInstall
+|2,0,1521814525,,"BundleInstall"
+:%s/ /_/g
+|2,0,1520967639,,"%s/ /_/g"
+:%s/ /_//g
+|2,0,1520967618,,"%s/ /_//g"
+:%s/ /_//g;
+|2,0,1520967596,,"%s/ /_//g;"
+:%s/ /_/g;
+|2,0,1520967576,,"%s/ /_/g;"
+:q!
+|2,0,1520246155,,"q!"
+:!ls
+|2,0,1519844162,,"!ls"
+:ls
+|2,0,1519844156,,"ls"
+:wq!
+|2,0,1519312924,,"wq!"
+:qw!
+|2,0,1519312921,,"qw!"
+:Q
+|2,0,1519155352,,"Q"
 :BundleClean
 |2,0,1502300626,,"BundleClean"
 :source %
 |2,0,1502300603,,"source %"
-:BundleInstall
-|2,0,1502299790,,"BundleInstall"
-:wq
-|2,0,1502299662,,"wq"
-:wq!
-|2,0,1502211498,,"wq!"
-:q!
-|2,0,1501682320,,"q!"
-:Q
-|2,0,1498485457,,"Q"
 :W
 |2,0,1495752568,,"W"
 :%s/     //g
@@ -46,6 +62,36 @@ $
 |2,0,1485880170,,"PluginInstall"
 
 # Search String History (newest to oldest):
+?/print
+|2,1,1521815055,47,"print"
+?/auto
+|2,1,1521054687,47,"auto"
+?/auto_
+|2,1,1521054587,47,"auto_"
+?/auto_view
+|2,1,1521054159,47,"auto_view"
+?/colo
+|2,1,1521053673,47,"colo"
+?/sort
+|2,1,1521052960,47,"sort"
+?/auth
+|2,1,1521051869,47,"auth"
+?/smtp
+|2,1,1521051863,47,"smtp"
+?/smt
+|2,1,1521051853,47,"smt"
+?/auth 
+|2,1,1521043074,47,"auth "
+?  
+|2,1,1520967639,," "
+? @$
+|2,1,1519155351,,"@$"
+?/password
+|2,1,1516649109,47,"password"
+?/ftmlsc1s069.nh.novant.net
+|2,1,1516649028,47,"ftmlsc1s069.nh.novant.net"
+?/sip
+|2,1,1516648962,47,"sip"
 ? %HERE%
 |2,1,1502211182,,"%HERE%"
 ?/<
@@ -64,267 +110,734 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	qualysapi.qg2.apps.qualys.com/
-|3,0,0,0,1,0,1502213878,"qualysapi.qg2.apps.qualys.com/"
-""1	LINE	0
+""0	CHAR	0
+	B
+|3,1,0,0,1,0,1521815327,"B"
+"1	CHAR	0
+	bcolors.OKGREEN + '[+] - Generated \'Top '+args.c+' Least Common Operating Systems\' output in '+args.outputFormat+' format.' + bcolors.ENDC
 	
-|3,1,1,1,1,0,1502301640,""
-"2	LINE	0
+|3,0,1,0,2,0,1521815235,"bcolors.OKGREEN + '[+] - Generated \\'Top '+args.c+' Least Common Operating Systems\\' output in '+args.outputFormat+' format.' + bcolors.ENDC",""
+"2	CHAR	0
+	bcolors.WARNING + '[!] - No port info found, related output will not be generated.' + bcolors.ENDC
 	
-|3,0,2,1,1,0,1502301639,""
+|3,0,2,0,2,0,1521815132,"bcolors.WARNING + '[!] - No port info found, related output will not be generated.' + bcolors.ENDC",""
 "3	LINE	0
-	au BufNewFile 
-|3,0,3,1,1,0,1502300857,"au BufNewFile "
-"4	LINE	0
-	Plugin 'tibabit/vim-templates'
-|3,0,4,1,1,0,1502300595,"Plugin 'tibabit/vim-templates'"
-"5	LINE	0
-	"Plugin 'aperezdc/vim-template'
-|3,0,5,1,1,0,1502300595,"\"Plugin 'aperezdc/vim-template'"
+	        print bcolors.FAIL + ' [!] - Input file cannot be found. Quitting...' + bcolors.ENDC
+|3,0,3,1,1,0,1521814776,"        print bcolors.FAIL + ' [!] - Input file cannot be found. Quitting...' + bcolors.ENDC"
+"4	CHAR	0
+	bcolors.FAIL + ' [!] - Input file cannot be found. Quitting...' + bcolors.ENDC
+	
+|3,0,4,0,2,0,1521814695,"bcolors.FAIL + ' [!] - Input file cannot be found. Quitting...' + bcolors.ENDC",""
+"5	CHAR	0
+	bcolors.FAIL + ' [!] - Input file cannot be found. Quitting...' + bcolors.ENDC
+	
+|3,0,5,0,2,0,1521814678,"bcolors.FAIL + ' [!] - Input file cannot be found. Quitting...' + bcolors.ENDC",""
 "6	LINE	0
-	"https://qualysapi.qualys.com/api/2.0/fo/session/"
-|3,0,6,1,1,0,1502211344,"\"https://qualysapi.qualys.com/api/2.0/fo/session/\""
+	170.98.106.80 sts.novanthealth.org
+|3,0,6,1,1,0,1521640065,"170.98.106.80 sts.novanthealth.org"
 "7	LINE	0
-	-d "action=login&username=acme_ab12&password=passwd"
-|3,0,7,1,1,0,1502211342,"-d \"action=login&username=acme_ab12&password=passwd\""
+	auto_view text/html application/x-pgp-message
+|3,0,7,1,1,0,1521054602,"auto_view text/html application/x-pgp-message"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1494427097,""
+	alternative_order text/plain
+|3,0,8,1,1,0,1521054600,"alternative_order text/plain"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1494427097,""
+	set implicit_autoview 
+|3,0,9,1,1,0,1521054600,"set implicit_autoview "
+"q	CHAR	0
+	
+|3,0,26,0,1,0,1521042782,""
 "-	CHAR	0
-	·
-|3,0,36,0,1,0,1502301329,"·"
+	bcolors.WARNING + '[+] - No output flags specified, generating default outputs in '+args.outputFormat+' format.' + bcolors.ENDC
+|3,0,36,0,1,0,1521815327,"bcolors.WARNING + '[+] - No output flags specified, generating default outputs in '+args.outputFormat+' format.' + bcolors.ENDC"
 
 # global variables:
 
 # File marks:
-'0  22  0  ~/.vim/skel/nh-skel.php
-|4,48,22,0,1502301652,"~/.vim/skel/nh-skel.php"
-'1  1  0  ~/.vim/skel/nh-skel.
-|4,49,1,0,1502301570,"~/.vim/skel/nh-skel."
-'2  1  0  ~/.vim/skel/nh-skel.php
-|4,50,1,0,1502301558,"~/.vim/skel/nh-skel.php"
-'3  1  0  ~/.vim/skel/nh-skel.php
-|4,51,1,0,1502301558,"~/.vim/skel/nh-skel.php"
-'4  6  23  ~/.vim/skel/nh-skel.html
-|4,52,6,23,1502301539,"~/.vim/skel/nh-skel.html"
-'5  129  39  ~/.vimrc
-|4,53,129,39,1502300871,"~/.vimrc"
-'6  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,54,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
-'7  1  0  ~/.vimrc
-|4,55,1,0,1502300337,"~/.vimrc"
-'8  1  0  ~/.vimrc
-|4,56,1,0,1502300337,"~/.vimrc"
-'9  1  0  ~/.vimrc
-|4,57,1,0,1502299767,"~/.vimrc"
+'0  1  0  ~/dev/NMAPgrapher/.git/config
+|4,48,1,0,1521816912,"~/dev/NMAPgrapher/.git/config"
+'1  29  55  ~/dev/NMAPgrapher/README.md
+|4,49,29,55,1521815727,"~/dev/NMAPgrapher/README.md"
+'2  276  10  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,50,276,10,1521815593,"~/dev/NMAPgrapher/NMAPgrapher.py"
+'3  188  14  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,51,188,14,1521814602,"~/dev/NMAPgrapher/NMAPgrapher.py"
+'4  188  14  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,52,188,14,1521814602,"~/dev/NMAPgrapher/NMAPgrapher.py"
+'5  1  0  ~/.vimrc
+|4,53,1,0,1521814532,"~/.vimrc"
+'6  21  26  ~/.vimrc
+|4,54,21,26,1521814515,"~/.vimrc"
+'7  21  26  ~/.vimrc
+|4,55,21,26,1521814515,"~/.vimrc"
+'8  111  0  ~/.zshrc
+|4,56,111,0,1521813187,"~/.zshrc"
+'9  111  0  ~/.zshrc
+|4,57,111,0,1521813145,"~/.zshrc"
 
 # Jumplist (newest first):
--'  22  0  ~/.vim/skel/nh-skel.php
-|4,39,22,0,1502301652,"~/.vim/skel/nh-skel.php"
--'  1  0  ~/.vim/skel/nh-skel.php
-|4,39,1,0,1502301574,"~/.vim/skel/nh-skel.php"
--'  1  0  ~/.vim/skel/nh-skel.
-|4,39,1,0,1502301570,"~/.vim/skel/nh-skel."
--'  1  0  ~/.vim/skel/nh-skel.
-|4,39,1,0,1502301570,"~/.vim/skel/nh-skel."
--'  1  0  ~/.vim/skel/nh-skel.php
-|4,39,1,0,1502301558,"~/.vim/skel/nh-skel.php"
--'  1  0  ~/.vim/skel/nh-skel.php
-|4,39,1,0,1502301558,"~/.vim/skel/nh-skel.php"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  6  23  ~/.vim/skel/nh-skel.html
-|4,39,6,23,1502301539,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  1  87  ~/.vim/skel/nh-skel.html
-|4,39,1,87,1502301146,"~/.vim/skel/nh-skel.html"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  129  39  ~/.vimrc
-|4,39,129,39,1502300871,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300590,"~/.vimrc"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vim/bundle/vim-templates/templates/html.template
-|4,39,1,0,1502300502,"~/.vim/bundle/vim-templates/templates/html.template"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1502300337,"~/.vimrc"
+-'  1  0  ~/dev/NMAPgrapher/.git/config
+|4,39,1,0,1521816912,"~/dev/NMAPgrapher/.git/config"
+-'  29  55  ~/dev/NMAPgrapher/README.md
+|4,39,29,55,1521815727,"~/dev/NMAPgrapher/README.md"
+-'  29  55  ~/dev/NMAPgrapher/README.md
+|4,39,29,55,1521815727,"~/dev/NMAPgrapher/README.md"
+-'  26  0  ~/dev/NMAPgrapher/README.md
+|4,39,26,0,1521815687,"~/dev/NMAPgrapher/README.md"
+-'  1  0  ~/dev/NMAPgrapher/README.md
+|4,39,1,0,1521815687,"~/dev/NMAPgrapher/README.md"
+-'  26  0  ~/dev/NMAPgrapher/README.md
+|4,39,26,0,1521815687,"~/dev/NMAPgrapher/README.md"
+-'  1  0  ~/dev/NMAPgrapher/README.md
+|4,39,1,0,1521815687,"~/dev/NMAPgrapher/README.md"
+-'  276  10  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,276,10,1521815593,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  276  10  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,276,10,1521815593,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  276  10  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,276,10,1521815593,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  276  10  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,276,10,1521815593,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  352  53  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,352,53,1521815300,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  352  53  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,352,53,1521815300,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  352  53  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,352,53,1521815300,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  352  53  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,352,53,1521815300,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  351  152  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,351,152,1521815288,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  351  152  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,351,152,1521815288,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  351  152  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,351,152,1521815288,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  351  152  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,351,152,1521815288,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  348  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,348,113,1521815276,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  348  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,348,113,1521815276,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  348  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,348,113,1521815276,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  348  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,348,113,1521815276,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  344  151  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,344,151,1521815267,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  344  151  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,344,151,1521815267,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  344  151  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,344,151,1521815267,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  344  151  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,344,151,1521815267,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  341  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,341,113,1521815250,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  341  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,341,113,1521815250,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  341  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,341,113,1521815250,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  341  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,341,113,1521815250,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  337  155  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,337,155,1521815244,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  337  155  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,337,155,1521815244,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  337  155  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,337,155,1521815244,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  337  155  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,337,155,1521815244,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  334  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,334,125,1521815210,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  334  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,334,125,1521815210,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  334  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,334,125,1521815210,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  334  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,334,125,1521815210,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  330  154  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,330,154,1521815198,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  330  154  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,330,154,1521815198,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  330  154  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,330,154,1521815198,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  330  154  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,330,154,1521815198,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  327  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,327,125,1521815194,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  327  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,327,125,1521815194,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  327  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,327,125,1521815194,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  327  125  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,327,125,1521815194,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  323  146  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,323,146,1521815179,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  323  146  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,323,146,1521815179,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  323  146  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,323,146,1521815179,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  323  146  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,323,146,1521815179,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  320  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,320,116,1521815174,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  320  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,320,116,1521815174,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  320  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,320,116,1521815174,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  320  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,320,116,1521815174,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  316  145  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,316,145,1521815169,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  316  145  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,316,145,1521815169,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  316  145  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,316,145,1521815169,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  316  145  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,316,145,1521815169,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  313  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,313,116,1521815154,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  313  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,313,116,1521815154,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  313  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,313,116,1521815154,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  313  116  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,313,116,1521815154,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  309  143  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,309,143,1521815146,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  309  143  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,309,143,1521815146,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  309  143  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,309,143,1521815146,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  309  143  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,309,143,1521815146,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  306  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,306,113,1521815141,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  306  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,306,113,1521815141,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  306  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,306,113,1521815141,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  306  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,306,113,1521815141,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  302  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,302,113,1521815126,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  302  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,302,113,1521815126,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  302  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,302,113,1521815126,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  302  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,302,113,1521815126,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  299  130  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,299,130,1521815095,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  299  130  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,299,130,1521815095,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  299  130  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,299,130,1521815095,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  299  130  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,299,130,1521815095,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  296  114  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,296,114,1521815087,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  296  114  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,296,114,1521815087,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  296  114  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,296,114,1521815087,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  296  114  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,296,114,1521815087,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  293  142  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,293,142,1521815077,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  293  142  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,293,142,1521815077,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  293  142  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,293,142,1521815077,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  293  142  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,293,142,1521815077,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  290  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,290,113,1521815068,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  290  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,290,113,1521815068,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  290  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,290,113,1521815068,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  290  113  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,290,113,1521815068,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  269  0  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,269,0,1521815057,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  269  0  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,269,0,1521815057,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  269  0  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,269,0,1521815057,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  269  0  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,269,0,1521815057,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  208  14  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,208,14,1521815055,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  208  14  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,208,14,1521815055,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  208  14  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,208,14,1521815055,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  208  14  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,208,14,1521815055,"~/dev/NMAPgrapher/NMAPgrapher.py"
+-'  197  106  ~/dev/NMAPgrapher/NMAPgrapher.py
+|4,39,197,106,1521814936,"~/dev/NMAPgrapher/NMAPgrapher.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/dev/NMAPgrapher/.git/config
+	*	1521816904	0
+	"	1	0
+
+> ~/dev/NMAPgrapher/README.md
+	*	1521815725	0
+	"	29	55
+	^	29	56
+	.	29	55
+	+	29	55
+
+> ~/dev/NMAPgrapher/NMAPgrapher.py
+	*	1521815329	0
+	"	276	10
+	^	276	12
+	.	276	10
+	+	39	17
+	+	40	13
+	+	188	14
+	+	191	14
+	+	194	14
+	+	197	14
+	+	290	14
+	+	293	14
+	+	296	14
+	+	299	14
+	+	302	14
+	+	306	14
+	+	309	14
+	+	313	14
+	+	316	14
+	+	320	14
+	+	323	14
+	+	327	14
+	+	330	14
+	+	334	14
+	+	337	14
+	+	341	14
+	+	344	14
+	+	348	14
+	+	351	14
+	+	352	6
+	+	276	10
+
+> ~/.vimrc
+	*	1521814531	0
+	"	1	0
+	^	21	27
+	.	21	26
+	+	19	0
+	+	109	18
+	+	131	0
+	+	130	38
+	+	21	26
+
+> ~/.zshrc
+	*	1521813185	0
+	"	111	0
+	^	111	1
+	.	111	0
+	+	92	0
+	+	92	32
+	+	97	10
+	+	97	29
+	+	98	0
+	+	92	0
+	+	3	0
+	+	5	46
+	+	98	0
+	+	91	16
+	+	97	22
+	+	97	36
+	+	97	51
+	+	97	14
+	+	97	55
+	+	97	71
+	+	97	0
+	+	97	36
+	+	97	47
+	+	97	0
+	+	2	66
+	+	98	0
+	+	3	52
+	+	95	19
+	+	111	0
+
+> ~/dev/dtc2/README.md
+	*	1521806059	0
+	"	1	0
+
+> ~/dev/Platypus/build_release.sh
+	*	1521805974	0
+	"	1	0
+
+> ~/dev/Platypus/README.md
+	*	1521805944	0
+	"	93	0
+
+> ~/evil/nmap-output/11-07-2017-G_HOUSE_10.191.16.0_VRW_C_1016.xml
+	*	1521735295	0
+	"	1	0
+
+> ~/dev/dradis-3.6.0-osx/README.md
+	*	1521734575	0
+	"	52	0
+
+> ~/dev/etherape-0.9.14/INSTALL
+	*	1521723674	0
+	"	50	0
+
+> ~/dev/parsers/tcpdump2csv.pl
+	*	1521718900	0
+	"	46	0
+
+> ~/evil/pcap-maltego/GetDestClients.py
+	*	1521645275	0
+	"	23	17
+	^	23	18
+	.	23	17
+	+	23	17
+
+> ~/evil/pcap-maltego/GetSourceClients.py
+	*	1521645250	0
+	"	22	17
+	^	22	18
+	.	22	17
+	+	22	17
+
+> ~/evil/st
+	*	1521640089	0
+	"	1	335
+	^	1	336
+	.	1	335
+	+	1	335
+
+> /private/etc/hosts
+	*	1521640065	0
+	"	9	0
+	.	10	0
+	+	10	0
+
+> ~/evil/site-review/sites.to.check
+	*	1521113745	0
+	"	1	0
+
+> ~/.mutt/muttrc
+	*	1521054696	0
+	"	57	25
+	^	57	26
+	.	57	25
+	+	41	27
+	+	74	0
+	+	78	0
+	+	79	0
+	+	75	0
+	+	78	0
+	+	76	10
+	+	57	44
+	+	57	28
+	+	57	0
+	+	56	18
+	+	57	25
+
+> ~/.mutt/.mailcap
+	*	1521054529	0
+	"	3	12
+	^	3	13
+	.	3	12
+	+	3	82
+	+	1	0
+	+	2	10
+	+	3	10
+	+	2	91
+	+	3	12
+
+> ~/.mutt/tmp/mutt-🦄_💩-501-70294-1300047160832331523
+	*	1521053241	0
+	"	4	0
+	^	4	0
+	.	3	30
+	+	3	30
+
+> ~/.mutt/user
+	*	1521051835	0
+	"	1	0
+	^	3	43
+	.	3	26
+	+	3	26
+
+> ~/.muttdebug1
+	*	1521047550	0
+	"	64	0
+
+> ~/.muttdebug0
+	*	1521042786	0
+	"	56	1
+
+> ~/.mutt/mutt-office365/user
+	*	1521040697	0
+	"	5	24
+	^	5	25
+	.	5	24
+	+	2	28
+	+	3	23
+	+	4	30
+	+	5	24
+
+> ~/Documents/bimed
+	*	1521031804	0
+	"	3	0
+	^	3	0
+	.	2	0
+	+	2	0
+
+> ~/round2_Vlan_rewite.csv
+	*	1520967639	0
+	"	26	0
+	^	1	0
+	.	3	0
+	+	1	0
+	+	3	0
+
+> ~/targets.txt
+	*	1520963249	0
+	"	229	0
+	.	72	0
+	+	7	0
+	+	228	0
+	+	230	0
+	+	158	0
+	+	72	0
+
+> ~/sitelist.txt
+	*	1520962817	0
+	"	1	0
+
+> ~/website.txt
+	*	1520962035	0
+	"	1	0
+
+> ~/evil/site-review/sites
+	*	1520949299	0
+	"	94	133
+	^	94	134
+	.	94	133
+	+	94	133
+
+> ~/dev/mazda_getInfo/info.sh
+	*	1520876892	0
+	"	1	0
+
+> ~/dev/ssh-audit/README.md
+	*	1520358168	0
+	"	1	0
+
+> ~/dev/libvmdk/autogen.sh
+	*	1520275141	0
+	"	77	0
+
+> ~/dev/libvmdk/README
+	*	1520274075	0
+	"	1	0
+
+> ~/Downloads/findilos
+	*	1520263786	0
+	"	41	0
+
+> ~/notes
+	*	1520246151	0
+	"	1	70
+	^	1	71
+	.	1	70
+	+	1	70
+
+> ~/dev/CVE-2017-12542/exploit_1.py
+	*	1519946010	0
+	"	1	0
+
+> ~/dev/CVE-2017-12542/README.md
+	*	1519946006	0
+	"	1	0
+
+> ~/dev/CVE-2017-12542/check.sh
+	*	1519907885	0
+	"	9	14
+	^	9	15
+	.	9	14
+	+	7	29
+	+	10	10
+	+	2	12
+	+	7	25
+	+	7	0
+	+	5	0
+	+	6	20
+	+	4	78
+	+	10	0
+	+	5	4
+	+	7	6
+	+	5	4
+	+	7	44
+	+	8	4
+	+	7	6
+	+	10	18
+	+	6	4
+	+	7	36
+	+	5	4
+	+	7	29
+	+	8	4
+	+	6	11
+	+	10	0
+	+	7	29
+	+	5	4
+	+	7	36
+	+	6	4
+	+	8	4
+	+	9	13
+	+	8	28
+	+	9	14
+
+> ~/dev/CVE-2017-12542/res
+	*	1519905371	0
+	"	1	0
+
+> ~/dev/CVE-2017-12542/t
+	*	1519905252	0
+	"	1	0
+
+> ~/dev/CVE-2017-12542/test
+	*	1519904370	0
+	"	8	5
+	^	8	6
+	.	8	5
+	+	2	4
+	+	3	3
+	+	8	5
+
+> ~/dev/CVE-2017-12542/ILO_NSLOOKUP.TXT
+	*	1519903005	0
+	"	1	0
+
+> ~/dev/CVE-2017-12542/all-computers.txt
+	*	1519848733	0
+	"	156889	0
+
+> ~/dev/CVE-2017-12542/ilo-results.txt
+	*	1519846274	0
+	"	69	0
+
+> ~/dev/CVE-2017-12542/ilotargets.txt
+	*	1519844264	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/bl
+	*	1519823630	0
+	"	1	19
+	^	1	20
+	.	1	19
+	+	1	19
+
+> ~/Downloads/iloadminadd.py
+	*	1519758557	0
+	"	1	0
+
+> ~/Downloads/keepnote-0.7.8/INSTALL
+	*	1519312921	0
+	"	98	6
+	.	98	6
+	+	98	6
+
+> ~/Documents/Peak10/notes.txt
+	*	1519156563	0
+	"	6	0
+	^	6	0
+	.	5	25
+	+	5	25
+
+> ~/blah.txt
+	*	1519058834	0
+	"	1	4954
+	^	1	4955
+	.	1	4954
+	+	1	4954
+
+> ~/evil/bunny/empire/payload.txt
+	*	1519056128	0
+	"	21	12
+	^	21	13
+	.	21	12
+	+	21	12
+
+> ~/dev/DeathStar/DeathStar.py
+	*	1519054125	0
+	"	1	0
+
+> ~/dev/BloodHound/Ingestors/SharpHound.ps1
+	*	1518704503	0
+	"	2	0
+
+> ~/dev/Toolkit/DHCPInfo.py
+	*	1518624439	0
+	"	1	0
+
+> ~/.npm/_logs/2018-02-14T13_23_11_181Z-debug.log
+	*	1518614688	0
+	"	11411	0
+
+> ~/Downloads/download.asf
+	*	1517252213	0
+	"	1	0
+
+> ~/Downloads/10.100.146.2
+	*	1516722467	0
+	"	1	0
+
+> ~/Downloads/10.100.146.1
+	*	1516719807	0
+	"	1343	0
+
+> ~/Downloads/Export_all.cfg
+	*	1516649117	0
+	"	8	18
+
+> ~/Downloads/Export_device_settings.cfg
+	*	1516649038	0
+	"	192	14
+
+> ~/Downloads/Export_call_server.cfg
+	*	1516648944	0
+	"	1	0
+
+> ~/dev/CVE-2017-10271/scanner.sh
+	*	1516022843	0
+	"	1	0
+
+> ~/evil/ducky/background/background.duk
+	*	1515610530	0
+	"	8	0
+	^	8	0
+	.	7	3
+	+	5	4
+	+	4	18
+	+	1	7
+	+	3	6
+	+	1	6
+	+	4	51
+	+	7	3
+
+> ~/evil/ducky/background/wpchange.ps1
+	*	1515604520	0
+	"	1	0
+	^	43	56
+	.	43	55
+	+	43	55
+
+> /usr/local/bin/pyenv-virtualenvwrapper
+	*	1515439183	0
+	"	14	0
 
 > ~/.vim/skel/nh-skel.php
 	*	1502301643	0
@@ -373,16 +886,6 @@ $
 	+	12	0
 	+	3	59
 
-> ~/.vimrc
-	*	1502300870	0
-	"	129	39
-	^	129	39
-	.	129	38
-	+	19	0
-	+	108	18
-	+	130	0
-	+	129	38
-
 > ~/.vim/bundle/vim-templates/templates/html.template
 	*	1502300496	0
 	"	1	0
@@ -418,22 +921,6 @@ $
 > ~/Documents/GitHub/community/portReport/portReport.pl
 	*	1502210951	0
 	"	227	0
-
-> ~/.zshrc
-	*	1502200830	0
-	"	91	16
-	^	91	17
-	.	91	16
-	+	92	0
-	+	92	32
-	+	98	10
-	+	100	29
-	+	101	0
-	+	92	0
-	+	3	0
-	+	5	46
-	+	102	0
-	+	91	16
 
 > /Applications/Splunk/etc/system/local/server.conf
 	*	1501682339	0
@@ -612,336 +1099,3 @@ $
 > ~/dev/cuckoo/sendEmail.py
 	*	1493247662	0
 	"	1	0
-
-> ~/dev/Eternalblue-Doublepulsar-Metasploit/deps/Eternalblue-2.2.0.xml
-	*	1493130996	0
-	"	1	0
-	^	16	12
-	.	36	9
-	+	9	10
-	+	12	17
-	+	16	11
-	+	36	9
-
-> ~/dev/Eternalblue-Doublepulsar-Metasploit/deps/Doublepulsar-1.3.1.xml
-	*	1493130914	0
-	"	34	34
-	^	35	47
-	.	35	34
-	+	5	10
-	+	8	17
-	+	12	11
-	+	22	11
-	+	42	18
-	+	35	34
-
-> ~/dev/Eternalblue-Doublepulsar-Metasploit/README.md
-	*	1493121288	0
-	"	1	0
-
-> ~/dev/doublepulsar-detection-script/slt.txt
-	*	1493042662	0
-	"	126	0
-	.	127	0
-	+	1	0
-	+	127	0
-
-> ~/dev/doublepulsar-detection-script/targets.txt
-	*	1493034686	0
-	"	1	0
-
-> ~/dev/doublepulsar-detection-script/445-list.csv
-	*	1493034324	0
-	"	175	0
-	.	314	0
-	+	314	0
-
-> ~/dev/doublepulsar-detection-script/README.md
-	*	1493033834	0
-	"	1	0
-
-> ~/dev/EQGRP_Lost_in_Translation/windows/fb.py
-	*	1492542825	0
-	"	41	2
-
-> ~/dev/EQGRP_Lost_in_Translation/windows/Fuzzbunch.xml
-	*	1492541712	0
-	"	64	0
-
-> ~/dev/Krakatau/com/java/helper/Main$Q_2774_.j
-	*	1490974608	0
-	"	71	0
-
-> ~/dev/Krakatau/com/java/helper/Main.j
-	*	1490974558	0
-	"	116	0
-
-> ~/dev/Krakatau/com/java/helper/Main.java
-	*	1490974470	0
-	"	56	0
-
-> ~/dev/box-js/payment.jar
-	*	1490973654	0
-	"	76	0
-	.	1	0
-	+	1	0
-
-> ~/dev/IIS_exploit/exploit.py
-	*	1490704956	0
-	"	1	0
-
-> ~/dev/smashing/circ-arcsight/jobs/twitter.rb
-	*	1490150905	0
-	"	1	0
-
-> ~/dev/crawly/ms15-034.py
-	*	1489761324	0
-	"	1	0
-
-> ~/dev/crawly/spyder.py
-	*	1489761309	0
-	"	1	0
-
-> ~/dev/crawly/crawly.py
-	*	1489761304	0
-	"	7	20
-
-> ~/arc-dash/get-report.py
-	*	1489754195	0
-	"	14	0
-	.	14	0
-	+	12	37
-	+	12	22
-	+	12	14
-	+	19	139
-	+	21	0
-	+	27	23
-	+	13	27
-	+	27	14
-	+	13	33
-	+	27	42
-	+	27	0
-	+	27	31
-	+	27	0
-	+	27	5
-	+	27	8
-	+	27	0
-	+	27	14
-	+	13	0
-	+	14	25
-	+	27	0
-	+	27	22
-	+	27	43
-	+	27	20
-	+	27	31
-	+	27	14
-	+	27	0
-	+	21	0
-	+	27	0
-	+	27	22
-	+	27	4
-	+	28	11
-	+	13	0
-	+	27	0
-	+	27	6
-	+	27	14
-	+	26	9
-	+	27	0
-	+	28	0
-	+	13	17
-	+	26	0
-	+	27	0
-	+	27	26
-	+	28	3
-	+	29	0
-	+	14	0
-	+	14	48
-	+	19	34
-	+	17	19
-	+	18	61
-	+	19	0
-	+	19	35
-	+	19	12
-	+	21	26
-	+	24	32
-	+	26	0
-	+	30	24
-	+	19	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	26	0
-	+	20	0
-	+	23	0
-	+	24	0
-	+	27	0
-	+	36	90
-	+	36	35
-	+	36	9
-	+	36	18
-	+	36	20
-	+	19	0
-	+	16	13
-	+	17	17
-	+	36	2
-	+	16	13
-	+	36	0
-	+	36	60
-	+	36	57
-	+	36	37
-	+	36	155
-	+	36	19
-	+	36	10
-	+	36	2
-	+	36	0
-	+	31	151
-	+	35	9
-	+	36	2
-	+	36	0
-	+	33	12
-	+	34	13
-	+	36	27
-	+	14	0
-
-> ~/dev/arcsight_logger/logger_soap.py
-	*	1489665317	0
-	"	1	0
-
-> ~/evil/hashes.txt
-	*	1489411108	0
-	"	4	0
-	.	17	0
-	+	17	0
-
-> ~/dev/zarp/requirements.txt
-	*	1488378067	0
-	"	4	0
-	^	4	15
-	.	4	0
-	+	4	0
-
-> ~/dev/hashcat/BUILD.md
-	*	1488305540	0
-	"	19	0
-
-> /Volumes/eas049/test.txt
-	*	1488304954	0
-	"	7	67
-	^	7	68
-	.	7	67
-	+	7	67
-
-> /private/etc/setoolkit/set.config
-	*	1487775909	0
-	"	34	17
-	^	34	18
-	.	34	17
-	+	33	0
-	+	34	17
-
-> ~/dev/set/readme/RATTE_README.txt
-	*	1487775663	0
-	"	1	0
-
-> ~/dev/faraday-master/faraday.py
-	*	1487769896	0
-	"	107	0
-
-> ~/.msf4/db/postgresql.opts
-	*	1487703261	0
-	"	1	0
-
-> ~/.msf4/db/postgresql.auto.conf
-	*	1487703248	0
-	"	1	0
-
-> ~/.msf4/db/postgresql.conf
-	*	1487703234	0
-	"	186	0
-
-> ~/.msf4/database.yml
-	*	1487702643	0
-	"	1	0
-
-> /Applications/Armitage.app/Contents/Resources/Java/index.txt
-	*	1487702239	0
-	"	1	0
-
-> /Applications/Armitage.app/Contents/Info.plist
-	*	1487702229	0
-	"	1	0
-
-> ~/dev/scratch/test.sh
-	*	1486996401	0
-	"	12	10
-	^	12	11
-	.	12	10
-	+	10	12
-	+	12	10
-
-> /Library/Preferences/VMware Fusion/vmnet8/nat.conf
-	*	1486391714	0
-	"	61	18
-	^	61	19
-	.	61	18
-	+	61	18
-
-> /Library/Preferences/VMware Fusion/vmnet8/dhcpd.conf
-	*	1486391572	0
-	"	1	0
-	^	46	13
-	.	46	12
-	+	46	12
-
-> ~/.profile
-	*	1486132678	0
-	"	1	0
-
-> ~/.bash_profile
-	*	1486132645	0
-	"	1	0
-
-> ~/.ssh/id_rsa.pub
-	*	1486036688	0
-	"	1	0
-
-> ~/Downloads/35936.py
-	*	1485965847	0
-	"	205	0
-	.	11	0
-	+	11	0
-
-> /private/etc/hosts
-	*	1485885414	0
-	"	10	17
-	^	10	18
-	.	10	17
-	+	10	17
-
-> ~/dev/getuid/.git/COMMIT_EDITMSG
-	*	1485882503	0
-	"	9	5
-	^	9	6
-	.	9	5
-	+	9	5
-
-> ~/dev/getuid/getuid.ps1
-	*	1485882419	0
-	"	1	0
-	^	1	31
-	.	1	30
-	+	1	30
-
-> /private/var/folders/s0/tgy1kzsx66z78t4m7hx4rgsm0000gn/T/chsh.Ppj0ou
-	"	6	24
-	^	6	25
-	.	6	7
-	+	6	7
-
-> /private/etc/shells
-	"	10	17
-	^	10	18
-	.	10	0
-	+	11	0
-	+	10	0
