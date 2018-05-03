@@ -19,10 +19,10 @@ Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-surround'
-"Plugin 'xolox/vim-colorscheme-switcher'
-"Plugin 'xolox/vim-misc'
-"Plugin 'Taverius/vim-colorscheme-manager'
-
+Plugin 'xolox/vim-colorscheme-switcher'
+Plugin 'xolox/vim-misc'
+Plugin 'Taverius/vim-colorscheme-manager'
+Plugin 'scrooloose/nerdtree'
 
 "End of Vundle plugins
 call vundle#end()
