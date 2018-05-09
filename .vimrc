@@ -18,11 +18,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-surround'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'xolox/vim-misc'
 Plugin 'Taverius/vim-colorscheme-manager'
 Plugin 'scrooloose/nerdtree'
+
 
 "End of Vundle plugins
 call vundle#end()
@@ -110,7 +110,7 @@ set pastetoggle=<F3>
 nmap <C-N><C-N> :set invnumber<CR>
 nmap <C-L><C-L> :set list<CR>
 nmap <C-K><C-K> :set nolist<CR>
-
+nmap <C-T> :NERDTreeToggle<CR>
 "Other indention settings
 au BufNewFile,BufRead silent *.js, *.html, *.css
     set tabstop=2
